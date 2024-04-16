@@ -1,0 +1,86 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: rgb(7, 10, 190);
+    color: rgb(109, 98, 209)
+}
+
+body{
+    background-color: rgb(7, 10, 190);
+}
+
+main {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    margin: 100px;
+    color: rgb(14, 14, 14)
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    outline: none;
+    font-size: 24px;
+    color: rgb(24, 24, 24);
+    background-color: rgb(3, 166, 207);
+    border: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.select {
+    padding: 15px;
+    width: 90px;
+    height: 50px;
+    outline: none;
+    text-transform: uppercase;
+    position: relative;
+    background-color: rgb(11, 2, 60);
+    color:rgb(0, 59, 132);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdown{
+    background-color: rgb(168, 4, 4);
+    color:rgb(24, 24, 24);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    overflow: auto;
+    height: 200px;
+}
+
+.dropdown .option{
+    padding: 5px 10px;
+    width: 90px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.show{
+    display: block !important;
+}
